@@ -1,4 +1,5 @@
 import CategoryList from "@/components/CategoryList";
+import Discover from "@/components/Discover";
 import Hero from "@/components/Hero";
 import NewArrival from "@/components/NewArrival";
 import { client } from "@/sanity/lib/client";
@@ -19,6 +20,10 @@ export default async function Home() {
 
       <section>
         <NewArrival newArrivals={newArrivals.slice(0, 4)} />
+      </section>
+
+      <section>
+        <Discover />
       </section>
     </>
   );

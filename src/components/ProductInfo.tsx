@@ -23,8 +23,14 @@ const ProductInfo = ({ product }: { product: any }) => {
       </div>
       <div className="w-full h-[1px] bg-gray-200 my-3"></div>
 
+      <div className="flex flex-col pb-4">
+        <h3 className="font-semibold sm:text-xl text-md">Category</h3>
+        <div className="w-[150px] h-[1px] bg-gray-200 my-2"></div>
+        <p className="p-2 border rounded w-max text-sm bg-primary text-white">{product.category}</p>
+      </div>
+
       <h3 className="font-semibold sm:text-xl text-md mb-4">Size :</h3>
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-4 flex-wrap">
         {product?.size?.map((s: any) => (
           <button
             className={`px-4 py-2 border rounded cursor-pointer shadow-lg ${

@@ -13,3 +13,6 @@ export const textEllipsis = (text: string, maxLength: number) => {
   }
   return text;
 };
+
+export const firstLetterUppercase = (text: string) =>
+  text.charAt(0).toUpperCase() + text.slice(1);

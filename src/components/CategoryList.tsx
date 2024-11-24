@@ -11,17 +11,17 @@ const category = [
   },
   {
     id: 2,
-    name: "Accesories",
+    name: "Accessories",
     icon: <IoWatch size={20} fill="#40C2D0" />,
   },
   {
     id: 3,
-    name: "Coats",
+    name: "Jackets",
     icon: <GiLabCoat size={20} fill="#40C2D0" />,
   },
   {
     id: 4,
-    name: "Sweat Pants",
+    name: "Pants",
     icon: <PiPantsFill size={20} fill="#40C2D0" />,
   },
   {

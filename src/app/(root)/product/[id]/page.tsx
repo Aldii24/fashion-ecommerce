@@ -14,10 +14,10 @@ const page = async ({ params }: { params: Promise<{ id: string }> }) => {
   return (
     <div className="relative min-h-screen sm:pt-28 sm:px-10 px-4 pt-20">
       <div className="w-full flex md:flex-row flex-col gap-10">
-        <div className="md:w-1/2 w-full flex flex-col gap-4">
+        <div className="md:w-1/2 w-full flex flex-col gap-4 pb-10">
           <ProductImage product={product} />
         </div>
-        <div className="md:w-1/2 sm:h-1/4 w-full sticky top-28">
+        <div className="md:w-1/2 sm:h-1/4 w-full sticky top-28 pb-4">
           <ProductInfo product={product} />
         </div>
       </div>

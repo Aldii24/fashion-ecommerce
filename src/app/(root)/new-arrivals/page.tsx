@@ -11,8 +11,8 @@ const page = async () => {
   return (
     <>
       <div className="sm:pt-28 pt-20 sm:px-10 px-4">
-        <h3 className="md:text-3xl px-4 py-4 font-semibold text-primary">
-          Our New Arrival Product
+        <h3 className="md:text-3xl sm:text-2xl text-xl py-4 font-semibold text-primary">
+          New Arrival Product
         </h3>
         <div className="w-full h-[1px] bg-gray-200 mb-4"></div>
         <div className="grid grid-cols-2 lg:grid-cols-4 sm:grid-cols-3 md:gap-8 gap-2">
