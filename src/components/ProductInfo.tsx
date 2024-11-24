@@ -26,7 +26,9 @@ const ProductInfo = ({ product }: { product: any }) => {
       <div className="flex flex-col pb-4">
         <h3 className="font-semibold sm:text-xl text-md">Category</h3>
         <div className="w-[150px] h-[1px] bg-gray-200 my-2"></div>
-        <p className="p-2 border rounded w-max text-sm bg-primary text-white">{product.category}</p>
+        <p className="p-2 border rounded w-max text-sm bg-primary text-white">
+          {product.category}
+        </p>
       </div>
 
       <h3 className="font-semibold sm:text-xl text-md mb-4">Size :</h3>
@@ -42,6 +44,19 @@ const ProductInfo = ({ product }: { product: any }) => {
             {s}
           </button>
         ))}
+      </div>
+
+      <div className="w-full h-[1px] bg-gray-200 my-3"></div>
+
+      <div className="flex flex-col">
+        <h3 className="font-semibold sm:text-xl text-md">Price</h3>
+        <div className="w-[150px] h-[1px] bg-gray-200 my-2"></div>
+        <p className="sm:text-2xl text-xl font-bold">
+          {product.price.toLocaleString("id-ID", {
+            style: "currency",
+            currency: "IDR",
+          })}
+        </p>
       </div>
 
       <div className="flex items-center gap-2 py-4">
