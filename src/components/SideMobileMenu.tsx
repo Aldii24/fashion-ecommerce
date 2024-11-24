@@ -58,9 +58,14 @@ const SideMobileMenu = ({
 
             <div className="w-full h-[1px] bg-gray-200 mt-4"></div>
 
-            <Link href="/" className="flex items-center gap-2 px-4 mt-4">
-              <FiHeart size={20} className="text-gray-500" />
-              <span className="text-gray-500">Favorites</span>
+            <Link href="/" className="flex items-center gap-2 px-4 mt-4 group">
+              <FiHeart
+                size={20}
+                className="text-gray-500 group-hover:text-primary transition-colors ease-in-out duration-300"
+              />
+              <span className="text-gray-500 group-hover:text-primary transition-colors ease-in-out duration-300">
+                Favorites
+              </span>
             </Link>
             <div className="w-full h-[1px] bg-gray-200 mt-4"></div>
           </div>

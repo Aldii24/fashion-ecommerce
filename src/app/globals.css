@@ -13,3 +13,40 @@
   height: 500px;
   object-fit: cover;
 }
+
+.image-search {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-image {
+  width: 100%;
+  height: 400px;
+}
+
+@media screen and (min-width: 350px) {
+  .image-arrivals {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .product-image {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .image-arrivals {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .product-image {
+    width: 100%;
+    height: 600px;
+  }
+}
