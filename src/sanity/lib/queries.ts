@@ -14,13 +14,13 @@ export const PRODUCT_SEARCH_QUERY =
 `);
 
 export const PRODUCT_BY_ID_QUERY =
-  defineQuery(`*[_type == "products" && defined(slug.current) &&  _id match $id] [0] {
+  defineQuery(`*[_type == "products" && defined(slug.current) && _id match $id] [0] {
   _id, name, slug, description, category, price, size, brand,
     image
 }`);
 
 export const PRODUCT_BY_CATEGORY_QUERY =
-  defineQuery(`*[_type == "products" && defined(slug.current) &&  category match $category] {
+  defineQuery(`*[_type == "products" && defined(slug.current) && category match $category] {
   _id, name, slug, description, category, price, size, brand,
     image
 }`);
