@@ -7,20 +7,23 @@ import { auth, signIn, signOut } from "@/auth";
 import { getInitials } from "@/app/libs/utils";
 import { PiSignOut } from "react-icons/pi";
 import SideMobileMenu from "./SideMobileMenu";
+import Image from "next/image";
 
 const Navbar = async () => {
   const session = await auth();
 
-  console.log(session);
-
   return (
-    <header className="w-full flex items-center sm:py-6 sm:px-10 px-4 py-4 fixed shadow-lg bg-white z-10">
+    <header className="w-full flex items-center sm:py-6 sm:px-10 px-4 py-4 fixed shadow-lg bg-white z-20">
       <nav className="flex justify-between items-center w-full md:gap-16 lg:gap-36 gap-4">
         <div className="flex flex-1 items-center md:gap-8 gap-2">
           <Link href="/">
-            <h3 className="sm:text-3xl md:flex hidden text-xl font-bold">
-              ALD.<span className="text-primary">I</span>
-            </h3>
+            <Image
+              src="/logo.png"
+              alt="logo"
+              width={50}
+              height={50}
+              className="sm:text-3xl md:flex hidden text-xl font-bold logo-desktop"
+            />
           </Link>
           <SideMobileMenu
             initialName={getInitials(session?.user?.name ?? "")}

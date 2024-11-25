@@ -25,6 +25,11 @@
   height: 400px;
 }
 
+.logo-mobile {
+  width: 120px;
+  height: 60px;
+}
+
 @media screen and (min-width: 350px) {
   .image-arrivals {
     width: 100%;
@@ -46,6 +51,11 @@
     width: 200px;
     height: 200px;
   }
+
+  .img-brands {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -63,5 +73,15 @@
   .image-discover {
     width: 350px;
     height: 350px;
+  }
+
+  .logo-desktop {
+    width: 70px;
+    height: 35px;
+  }
+
+  .img-brands {
+    width: 50px;
+    height: 50px;
   }
 }

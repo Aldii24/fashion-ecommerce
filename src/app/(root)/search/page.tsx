@@ -78,7 +78,7 @@ const page = async ({
         <div className="flex flex-col justify-center items-center mx-auto">
           <Image src="/not-found.gif" alt="no-found" width={400} height={400} />
           <p className="text-2xl text-gray-500 font-bold uppercase">
-            Produknya ga ada bro !
+            Produknya ga ada kak, sabar ya.
           </p>
         </div>
       )}

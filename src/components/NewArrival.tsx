@@ -9,7 +9,7 @@ const NewArrival = ({ newArrivals }: { newArrivals: any }) => {
       <div className="flex justify-between items-center pb-2">
         <h3 className="sm:text-2xl text-xl font-bold px-4">New Arrivals</h3>
         <Link href="/new-arrivals">
-          <span className="text-primary sm:text-sm text-xs font-semibold px-4">
+          <span className="text-primary sm:text-sm text-xs font-semibold px-4 hover:underline">
             Lihat semua
           </span>
         </Link>

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Discover = () => {
   return (
-    <div className="flex flex-col md:flex-row h-auto gap-6 sm:px-10 px-4 py-16">
+    <div className="flex flex-col md:flex-row h-auto gap-6 sm:px-10 px-4 pt-16 pb-10">
       <div className="relative flex flex-col md:w-1/2 w-full bg-primary px-6 py-10 rounded-md shadow-lg text-white">
         <h3 className="text-3xl font-bold">ALD.I</h3>
         <div className="w-full h-[1px] bg-white mt-4"></div>

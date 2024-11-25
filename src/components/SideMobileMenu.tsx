@@ -5,6 +5,7 @@ import { useState, useEffect, useRef } from "react";
 import { CiTextAlignLeft } from "react-icons/ci";
 import { PiX } from "react-icons/pi";
 import { FiHeart } from "react-icons/fi";
+import Image from "next/image";
 
 const SideMobileMenu = ({
   initialName,
@@ -51,9 +52,13 @@ const SideMobileMenu = ({
         <div className="h-screen flex flex-col justify-between">
           <div>
             <Link href="/">
-              <h3 className="text-3xl font-bold pt-5 px-4">
-                ALD.<span className="text-primary">I</span>
-              </h3>
+              <Image
+                src="/logo.png"
+                alt="logo"
+                width={100}
+                height={100}
+                className="pt-5 px-4 logo-mobile"
+              />
             </Link>
 
             <div className="w-full h-[1px] bg-gray-200 mt-4"></div>

@@ -10,7 +10,7 @@ const SearchForm = () => {
       <input
         type="text"
         name="query"
-        placeholder="Cassy cantik banget"
+        placeholder="Apa yang kamu cari?"
         className="w-full outline-none bg-transparent placeholder:text-sm text-sm"
       />
     </form>
